@@ -5,3 +5,5 @@ node_modules
 _debug
 _metadata
 *.swp # vim temp files
+*.zip # zip file
+release packed
