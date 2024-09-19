@@ -1,9 +1,14 @@
 // service-worker.js
+let BETTER_KEY = 'Better?';
+let createIssueDialogStatus = {};
+createIssueDialogStatus[BETTER_KEY] = ''
+chrome.storage.local.set(createIssueDialogStatus);
+
 chrome.runtime.onInstalled.addListener(() => {
 });
 
 chrome.runtime.onMessage.addListener((msg) => {
-  console.log('Message listen');
+  console.log('Message listened');
   switch (msg.data) {
     case 'none':
       chrome.action.setIcon({
