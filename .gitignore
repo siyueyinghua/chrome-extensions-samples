@@ -4,6 +4,8 @@ node_modules
 # Temporary directory for debugging extension samples
 _debug
 _metadata
-*.swp # vim temp files
-*.zip # zip file
+# vim temp files
+*.swp
+# zip file
+*.zip
 release packed
