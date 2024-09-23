@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Better Jira Browse",
-  "description": "Provide the ability to improve User Experience on Jira browse page, including toggle visibility of right hand sidebar or panel, and maxmize the Create Issue pop up dialog or window.",
+  "description": "Improve User Experience on Jira browse page, toggle right hand sidebar, maxmize the Create Issue pop-up dialog.",
   "version": "0.2",
   "author": "yemingguang_hit@163.com", 
   "homepage_url": "https://github.com/siyueyinghua/chrome-extensions-samples/tree/main/functional-samples/tutorial.better-jira-browse/README.md",
