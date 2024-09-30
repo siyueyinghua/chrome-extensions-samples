@@ -43,10 +43,7 @@ chrome.action.onClicked.addListener(async (tab) => {
   chrome.storage.local.set(betterJiraBrowseStatus);
   updateIcon(betterJiraBrowseStatus);
   console.log("onClicked url: "+JSON.stringify(tab.url));
-  // skip urls undefined
-  if (tab.url === undefined) return undefined;
-  // skip urls like "chrome://" to avoid extension error
-  if (tab.url?.startsWith("chrome://")) return undefined;
+  if (tab.url === undefined) return undefined; // skip urls undefined
   chrome.scripting.executeScript({
     target: {tabId: tab.id},
     files: ['content.js']
@@ -56,10 +53,7 @@ chrome.action.onClicked.addListener(async (tab) => {
 chrome.tabs.onUpdated.addListener(function listener(tabId, changedProps, tab) {
   console.log("onUpdated: "+JSON.stringify(changedProps));
   console.log("onUpdated url: "+JSON.stringify(tab.url));
-  // skip urls undefined
-  if (tab.url === undefined) return undefined;
-  // skip urls like "chrome://" to avoid extension error
-  if (tab.url?.startsWith("chrome://")) return undefined;
+  if (tab.url === undefined) return undefined; // skip urls undefined
   chrome.scripting.executeScript({
     target: {tabId: tab.id},
     files: ['content.js']
@@ -70,10 +64,7 @@ chrome.tabs.onActivated.addListener(function(activeInfo) {
   console.log("onActivated: "+JSON.stringify(activeInfo));
   chrome.tabs.get(activeInfo.tabId, function(tab){
     console.log("onActivated url: "+JSON.stringify(tab.url));
-    // skip urls undefined
-    if (tab.url === undefined) return undefined;
-    // skip urls like "chrome://" to avoid extension error
-    if (tab.url?.startsWith("chrome://")) return undefined;
+    if (tab.url === undefined) return undefined; // skip urls undefined
     chrome.scripting.executeScript({
       target: {tabId: tab.id},
       files: ['content.js']

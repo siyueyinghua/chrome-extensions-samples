@@ -4,7 +4,7 @@
   "description": "Improve User Experience on Jira browse page, toggle right hand sidebar, maxmize the Create Issue pop-up dialog.",
   "version": "0.3",
   "author": "yemingguang_hit@163.com", 
-  "homepage_url": "https://github.com/siyueyinghua/chrome-extensions-samples/tree/main/functional-samples/tutorial.better-jira-browse-more/README.md",
+  "homepage_url": "https://github.com/siyueyinghua/chrome-extensions-samples/tree/main/functional-samples/tutorial.better-jira-browse-more-debugging/README.md",
   "icons": {
     "16": "images/icon-16.png",
     "32": "images/icon-32.png",
@@ -21,7 +21,7 @@
     }
   },
   "permissions": ["activeTab", "scripting", "storage"],
-  "host_permissions": ["<all_urls>"],
+  "host_permissions": ["https://*/*", "http://*/*"],
   "background": {
     "service_worker": "service-worker.js"
   },
