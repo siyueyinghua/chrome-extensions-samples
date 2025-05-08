@@ -28,8 +28,8 @@
   "commands": {
     "_execute_action": {
       "suggested_key": {
-        "default": "Ctrl+B",
-        "mac": "Command+B"
+        "default": "Alt+J",
+        "mac": "Alt+J"
       }
     }
   }

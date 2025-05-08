@@ -18,5 +18,5 @@ The "better or not status" will keep until you click the extension icon to toggl
 
 
 [*Note*] The shortcut is as following:
-- Window/Linux: "Ctrl+B",
-- "mac": "Command+B"
+- Window/Linux: "Alt+J",
+- "mac": "Alt+J"
